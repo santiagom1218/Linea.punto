@@ -4,11 +4,11 @@ public class Punto{
   private int x;
   private int y;
   
-  public Punto(int x, int y, int z, float res) {
+  public Punto(int x, int y, int z) {
       this.x = x;
       this.y = y;
       this.z = z;
-      this.res = res;
+      
   } 
 
   public void setx(int x){
@@ -20,7 +20,7 @@ public class Punto{
   }
   Scanner s= new Scanner(System.in);
   int z;
-  float res;
+
 
   public void leer(){
     Scanner s= new Scanner(System.in);
@@ -32,11 +32,11 @@ public class Punto{
   }
   public void distancia(Punto a,Punto b){
     res=(float)Math.sqrt(Math.pow(a.x-b.x,2)+Math.pow(a.y-b.y,2));
-    System.out.println(res);
+    System.out.println(distancia);
   }
   public void origen(){
     res=(float)Math.sqrt(Math.pow(this.x,2)+Math.pow(this.y,2));
-    System.out.println("distacia origen: "+res);
+    System.out.println("distacia origen: "+distancia);
     System.out.println("");
   }
   public void horizontal(){
